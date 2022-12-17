@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h3
+        {
+            color: #ddd;
+            padding-left: 5px;
+        }
+        .heading
+        {
+    
+          color: #f2f2f2;
+          text-align: center;
+          padding: 16px 14px;
+          font-size: 40px;
+          background-color: #333;
+        }
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        .rotate {
+  animation: rotation 18s;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+h2{
+    color: #ddd;
+}
+.container {
+  display: flex;
+  align-items: center;
+  
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+  text-align: right;
+}
+
+.text {
+    color: #f2f2f2;
+  font-size: 10px;
+  padding-right: 200px;
+}
+h2
+{
+    font-size: 50px;
+}
+.hungry
+{
+    font-size: 70px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#fname
+{
+    color: #ccc;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+        </style>
+        
+    <title>Document</title>
+</head>
+<body style="background:rgba(0,0,0,0.7) url(bg-hero.jpg) ;background-blend-mode: darken;">
+    <h1 align="center" class="heading">swathi restaurant</h1>
+    <div class="topnav" style="padding-top:50px">
+        <a class="active" href="#home">Home</a>
+        <a href="#menu">MENU</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="container">
+      <div style="padding-left:16px" class="text">
+
+      <h1 class="hungry">Hungry ?</h1>
+      <h2>Good,we are here to serve you </h2>
+      </div>
+      <div class="image">
+    <img src="hero.png" height="600" class="rotate linear infinite">
+      </div>
+    </div>
+    <div>
+        <table id="menu">
+            <tr><td><img src="menu-1.jpg"></td><td><h3>fruit salad</h3></td><td><h3>Rs.470</h3><td><img src="menu-5.jpg"></td><td><h3>mexican pizza</h3></td><td><h3>Rs.570</h3></td></tr>
+            <tr><td><img src="menu-2.jpg"></td><td><h3>chicken dum biryani</h3></td><td><h3>Rs.790</h3><td><img src="menu-6.jpg"></td><td><h3>chineese starters</h3></td><td><h3>Rs.400</h3></td></tr>
+            <tr><td><img src="menu-3.jpg"></td><td><h3>veg pizzaa</h3></td><td><h3>Rs.700</h3></td><td><img src="menu-7.jpg"></td><td><h3>pizza</h3></td><h3></h3></td><td><h3>Rs.700</h3></td></tr>
+            <tr><td><img src="menu-4.jpg"></td><td><h3>friedchicken</h3></td><td><h3>Rs.870</h3></td><td><img src="menu-8.jpg"></td><td><h3>bread and butter</h3></td><td><h3>Rs.580</h3></td></tr>
+        </table>
+    </div>
+    <div class="container" id="contact">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="/w3images/map.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">India</option>
+                <option value="canada">Australia</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="about-section" id="about">
+        <h1>About Us Page</h1>
+        
+        <p>90% of the foodies use the internet to find restaurants online hence having online food delivery websites is essential for food delivery businesses to promote their brand and get new customers.
+            Certainly, your food delivery website should be mobile friendly as more than 50% of the virtual traffic comes from mobile devices.
+            This guide would help you know why you should build a website for your food delivery business and what are the benefits associated with that
+            Why Should restaurant website development service
+            Opt For Food Delivery Websites?
+            The main focus of the restaurants is to serve quality food to their customers which undoubtedly, should be the topmost priority. On the other hand, what if your food outlet doesn’t attract any customers then how will you generate profits? Well, to resolve this issue, you need an amazing website with a food delivery ordering system.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="team-1.jpg" alt="Jane" style="width:9 0%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">MASTER Cheif</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="team-2.jpg" alt="Mike" style="width:90%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Assistant Cheif</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="team-3.jpg" alt="John" style="width:90%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Waiter</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>john@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
